@@ -41,17 +41,21 @@
               материалов о финансовом рынке</p> 
               <div class="form-inputs__button">
                 <input type="text" name="user_name" class="input input-name header__input" placeholder="Ваше имя">
-                <input type="tel" name="user_phone" class="input input-phone header__input" placeholder="Ваш номер телефона">
+                <input type="tel" name="user_phone" class="input input-phone header__input mask" placeholder="Ваш номер телефона">
                 <button type="submit" class="button header-form__button">Получить материалы</button>
               </div>
             </div>
           </div>
+          <div class="header-arrow">
+            <a href="#chapter1"><img src="img/header/arrow.png" alt=""></a>
+            
+          </div>
       </div>
     </div> 
 
-    <div class="main">
+    <div class="main" id="chapter1">
       <div class="container">
-        <h2 class="main-subtitle">О нашей компании</h2>
+        <h2 class="main-subtitle subtitle-h2">О нашей компании</h2>
         <div class="main-common">
           <div class="main-text_img">
             <div class="main-text">
@@ -81,17 +85,79 @@
               </div>
             </div>
           </div> 
-
-          <div class="main-video">
-            <img src="img/main/video.png" alt="">
+           <div class="main-video">
+            <iframe width="550" height="330" src="https://www.youtube.com/embed/8X0XqLu018A" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          
         </div>
+      </div>
+    </div> 
+
+    <div class="training">
+      <div class="container"> 
+        <div class="training-subtitle subtitle-h2">
+          Обучение трейдеров с нуля за 0 рублей!
+        </div>
+        <div class="training-text">
+          Наша уникальная <strong>бесплатная программа</strong> обучения трейдеров состоит из 10-ти часовых занятий, в которых мы изучим теорию и
+          заркепим ее практике на демо-счете.<br>
+          По окончанию программы,<strong>Вы будете уметь:</strong> 
+        </div> 
+        <div class="training-common">
+          <div class="training-icon_text">
+            <div class="training-icon">
+              <img src="img/training/icon1.png" alt="">
+            </div>
+            <div class="training_text">Вам легко будет объективно оценивать
+            финансовые рынки</div>
+          </div> 
+          <div class="training-icon_text">
+            <div class="training-icon">
+              <img src="img/training/icon2.png" alt="">
+            </div>
+            <div class="training_text">Сможете грамотно оценивать риски
+            инвестирования в те или иные
+            активы</div>
+          </div>
+          <div class="training-icon_text">
+            <div class="training-icon">
+              <img src="img/training/icon3.png" alt="">
+            </div>
+            <div class="training_text">Разбиратся в событиях на мировых финансовых рынках и сможете самостоятельно их
+            прогнозировать</div>
+          </div>
+          <div class="training-icon_text">
+            <div class="training-icon">
+              <img src="img/training/icon4.png" alt="">
+            </div>
+            <div class="training_text">Анализировать котировки с помощью
+            специализированного ПО</div>
+          </div> 
+          <div class="training-icon_text">
+            <div class="training-icon">
+              <img src="img/training/icon5.png" alt="">
+            </div>
+            <div class="training_text">Составлять торговую стратегию с
+            доходностью от 10% в месяц</div>
+          </div>
+          <div class="training-icon_text">
+            <div class="training-icon">
+              <img src="img/training/icon6.png" alt="">
+            </div>
+            <div class="training_text">Получать прибыль от торговли, используя
+            аналитику и новости</div>
+          </div>
+        </div>
+        <button type="submit" class="button header-form__button">Получить консультацию о курсе</button>
       </div>
     </div>
 
 
-  </div>
+  </div> 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/slick.min.js"></script> -->
+  <script src="js/script.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
  
 </body>
 </html>

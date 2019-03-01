@@ -394,6 +394,7 @@ template {
 .header {
   color: white;
   background: url("../img/header/background.png");
+  background-size: cover;
 }
 
 .header-logo_text {
@@ -453,24 +454,13 @@ template {
 }
 
 .header-title__form {
-  padding: 50px 0px 177px;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-}
-
-.header-title__form:before {
-  content: '';
-  background: url("../img/header/arrow.png") no-repeat;
-  position: absolute;
-  top: 83%;
-  left: 48%;
-  width: 21px;
-  height: 12px;
 }
 
 .header-text-form {
@@ -559,6 +549,14 @@ template {
   margin-top: 8px;
 }
 
+.header-arrow {
+  padding-bottom: 177px;
+  margin: 117px auto 0;
+  width: 22px;
+  height: 13px;
+  cursor: pointer;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 941px;
@@ -619,6 +617,9 @@ template {
   }
   .container .header-form {
     margin-bottom: 30px;
+  }
+  .container .header-arrow {
+    padding-bottom: 80px;
   }
   .container .title__button {
     margin-bottom: 20px;
@@ -694,6 +695,9 @@ template {
     height: 50px;
     margin-top: 0;
   }
+  .container .header-arrow {
+    margin: -10px auto 0;
+  }
   .container p.form-text {
     margin-bottom: 15px;
   }
@@ -704,9 +708,6 @@ template {
 }
 
 .main-subtitle {
-  font-size: 26px;
-  text-align: center;
-  text-transform: uppercase;
   margin-bottom: 67px;
   position: relative;
 }
@@ -878,6 +879,12 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+.container .subtitle-h2 {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 
 img {

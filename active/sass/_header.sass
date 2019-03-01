@@ -1,6 +1,7 @@
 .header 
   color: white
   background: url('../img/header/background.png')
+  background-size: cover
   &-logo_text 
     padding: 70px 0 50px
     display: flex 
@@ -30,21 +31,11 @@
     width: 170px
     height: 45px
   &-title__form
-    padding: 50px 0px 177px 
+    padding-top: 50px
     display: flex
-    justify-content: space-between 
-    position: relative 
-    &:before 
-      content: ''
-      background: url('../img/header/arrow.png')no-repeat 
-      position: absolute 
-      top: 83% 
-      left: 48% 
-      width: 21px
-      height: 12px  
+    justify-content: space-between   
   &-text-form 
     display: flex
-
   &-title 
     font-size: 48px 
     font-weight: bold 
@@ -90,13 +81,18 @@
     background: white url('../img/header/user_icon.png')no-repeat 7% 50% 
   .input-phone 
     background: white url('../img/header/phone_icon.png')no-repeat 7% 50%  
-
   &-form__button 
     width: 210px 
     height: 55px   
-    margin-top: 8px 
-
-
+    margin-top: 8px
+  &-arrow 
+    padding-bottom: 177px
+    margin: 117px auto 0
+    width: 22px 
+    height: 13px
+    cursor: pointer  
+ 
+ 
 @media (max-width: 1199px)
   .container
     width: 941px 
@@ -131,7 +127,9 @@
       &__text 
         margin-bottom: 20px 
       &-form 
-        margin-bottom: 30px  
+        margin-bottom: 30px 
+      &-arrow 
+        padding-bottom: 80px    
     .title__button 
         margin-bottom: 20px    
 @media (max-width: 768px)
@@ -181,7 +179,9 @@
         width: 250px 
       &-form__button 
         height: 50px  
-        margin-top: 0      
+        margin-top: 0 
+      &-arrow 
+        margin: -10px auto 0       
     p.form-text 
         margin-bottom: 15px 
         
