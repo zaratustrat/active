@@ -1,2 +1,108 @@
 .main
- 
+  padding: 70px 0 100px
+  &-subtitle 
+    font-size: 26px 
+    text-align: center 
+    text-transform: uppercase 
+    margin-bottom: 67px  
+    position: relative 
+    &:before 
+      content: ''
+      background: url('../img/line.jpg')no-repeat center 
+      width: 100% 
+      height: 5px
+      display: block 
+      margin: 0 
+      position: absolute 
+      top: 150% 
+  &-common 
+    display: flex 
+    justify-content: space-around
+  &-text_img 
+    max-width: 555px 
+  &-text 
+    color: #5b5b5b 
+    max-width: 560px 
+    font-size: 18px 
+    line-height: 25px
+  &-up 
+    margin-bottom: 15px
+  &-down 
+    margin-bottom: 26px
+  &-img_common
+    display: flex
+  // &_img_text 
+  //   margin-bottom: 13px
+  &_text
+    font-weight: bold   
+  &_img_1 
+    margin: 0 50px 0 20px 
+    position: relative
+    &:before 
+      content: '' 
+      background: #1991d4
+      border-radius: 3px 
+      width: 263px 
+      height: 51px 
+      position: absolute
+      top: 63px 
+      left: -20px
+      z-index: -1   
+  &_img_2 
+    margin-left: 20px 
+    position: relative
+    &:before 
+      content: '' 
+      background: #7e66e7 
+      border-radius: 3px 
+      width: 263px 
+      height: 51px 
+      position: absolute 
+      top: 63px 
+      left: -20px
+      z-index: -1  
+  &-img 
+    width: 102px 
+    margin-bottom: 13px 
+  &_text 
+    width: 223px 
+    font-size: 18px 
+    font-weight: bold     
+     
+  &-video 
+    max-width: 555px 
+    width: 100% 
+
+@media (max-width: 1199px)
+  .container
+    width: 941px
+    .main 
+      &-common 
+        display: flex 
+        flex-direction: column
+        align-items: center 
+      &_text 
+        margin-bottom: 30px  
+@media (max-width: 992px) 
+  .container
+    width: 767px
+@media (max-width: 768px)
+  .container
+    width: 576px
+@media(max-width: 577px)
+  .container
+    width: 95%  
+    .main  
+      padding: 30px 0 30px
+      &-img_common 
+        flex-direction: column 
+      &-common 
+        text-align: justify 
+      &_img_2 
+        margin-left: 60px
+      &-text_img 
+        display: flex
+        flex-direction: column
+        align-items: center   
+    .img__2 
+        margin-left: 120px          
