@@ -22,5 +22,19 @@
 // });
 
 $(document).ready(function () {
- $(".mask").mask("+7 (999) 99-99-999");
+ $('.mask').mask("+7 (999) 99-99-999");
 })
+$('.scrol').bind("click", function (e) {
+  var anchor = $(this);
+  $('html, body').stop().animate({
+    scrollTop: $(anchor.attr('href')).offset().top - 60
+  }, 1200);
+  e.preventDefault();
+});
+// var $page = $('html, body');
+// $('.scrol').click(function () {
+//   $page.animate({
+//     scrollTop: $($.attr(this, 'href')).offset().top
+//   }, 400);
+//   return false;
+// });

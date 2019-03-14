@@ -1,0 +1,44 @@
+.training 
+  background: #f4f9fb 
+  padding: 75px 0 80px 
+  &-subtitle 
+    margin-bottom: 43px 
+  &-text
+    $text-color: #5b5b5b 
+    font-size: 18px 
+    text-align: center 
+    line-height: 28px 
+  &-span 
+    display: block  
+    margin: 5px auto 42px
+  &-common 
+    display: flex
+    justify-content: space-between 
+    flex-wrap: wrap
+  &-icon_text
+    text-align: center
+    align-items: center
+    flex-direction: column
+    display: flex 
+    max-width: 353px 
+    width: 100% 
+    height: 136px 
+    line-height: 25px 
+    margin-bottom: 39px 
+  &-form__button
+    margin: auto
+    display: block 
+    width: 299px 
+    height: 57px 
+
+@media (max-width: 768px)
+  .container
+    width: 576px
+    .training 
+     &-common 
+      justify-content: center
+@media(max-width: 577px)
+  .training 
+    padding: 30px 0 30px 
+    &-icon_text
+      margin-bottom: 20px

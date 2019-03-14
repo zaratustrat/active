@@ -2,19 +2,10 @@
   padding: 70px 0 100px
   &-subtitle 
     margin-bottom: 67px  
-    position: relative 
-    &:before 
-      content: ''
-      background: url('../img/line.jpg')no-repeat center 
-      width: 100% 
-      height: 5px
-      display: block 
-      margin: 0 
-      position: absolute 
-      top: 150% 
   &-common 
     display: flex 
-    justify-content: space-around
+    justify-content: space-around 
+    align-items: center
   &-text_img 
     max-width: 555px 
   &-text 
@@ -64,9 +55,19 @@
     font-size: 18px 
     font-weight: bold     
      
-  &-video 
+  &-video
     max-width: 555px 
-    width: 100% 
+    width: 100%  
+    position: relative
+    padding-bottom: 28.25%
+    padding-top: 25px
+    overflow: hidden
+  &-video iframe
+      position: absolute 
+      top: 0
+      left: 0
+      width: 100%
+      height: 100% 
 
 @media (max-width: 1199px)
   .container
@@ -77,8 +78,22 @@
         flex-direction: column
         align-items: center 
       &_text 
-        margin-bottom: 30px  
-@media(max-width: 577px)
+        margin-bottom: 30px 
+      &-video 
+        padding-bottom: 31.25% 
+@media (max-width: 992px) 
+  .container
+    width: 767px
+    .main
+     &-video 
+        padding-bottom: 37.25% 
+@media (max-width: 768px)
+  .container
+    width: 576px 
+    .main
+     &-video 
+        padding-bottom: 50.25%           
+@media (max-width: 577px)
   .main
       padding: 30px 0 30px
   .container 
@@ -93,6 +108,9 @@
       &-text_img 
         display: flex
         flex-direction: column
-        align-items: center   
+        align-items: center
+      &-video 
+        padding-bottom: 50.25%      
     .img__2 
-        margin-left: 120px          
+        margin-left: 120px
+
