@@ -38,3 +38,36 @@ $('.scrol').bind("click", function (e) {
 //   }, 400);
 //   return false;
 // });
+$('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  infinite: true,
+  nextArrow: '<div class="arrow arrow_right"></div>',
+  prevArrow: '<div class="arrow arrow_left"></div>',
+  responsive: [{
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+     
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+
+  ]
+});

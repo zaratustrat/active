@@ -1,0 +1,118 @@
+.footer
+  padding: 45px 0 31px 
+  color: white
+  background: url('../img/header/background.png')
+  background-size: cover
+  &-logo_text 
+    // padding: 70px 0 50px
+    display: flex 
+    justify-content: space-between
+    margin-bottom: 77px
+  &-logo 
+    display: flex 
+  .logo 
+    margin-right: 59px
+  &_text 
+    width: 314px 
+    font-size: 16px 
+    font-weight: bold 
+  &-text_phone 
+    margin-right: 26px
+  &-text
+    display: block 
+    text-align: right  
+  &_phone 
+    color: white 
+    text-decoration: none 
+    font-size: 19px 
+    font-weight: bold 
+  &-contacts 
+    display: flex 
+    align-items: center
+  .button-callback 
+    width: 170px
+    height: 45px
+  &-title__form
+    padding-top: 50px
+    display: flex
+    justify-content: space-between   
+  &-text-form 
+    display: flex
+  &-title 
+    font-size: 48px 
+    font-weight: bold 
+  .title 
+    font-size: 24px
+    display: block  
+    margin-bottom: 20px  
+  &__text  
+    font-weight: normal
+    font-size: 18px 
+    max-width: 700px  
+    width: 100%  
+    margin-bottom: 33px 
+  .title__button 
+    width: 243px 
+    height: 61px 
+  &-small-text 
+   text-align: center
+   position: relative
+   &:after 
+    content: ''
+    display: block
+    width: 100%
+    height: 2px 
+    border-bottom: 1px solid #6b85d3 
+    position: absolute
+    top: -30px
+    left: 0 
+    z-index: 9   
+@media (max-width: 1199px)
+  .container
+    width: 941px
+@media (max-width: 992px) 
+  .container
+    width: 767px 
+    .footer
+      &-logo 
+        flex-direction: column
+        align-items: flex-end     
+      &-contacts 
+        flex-direction: column
+      &-text_phone 
+        margin-bottom: 20px  
+@media (max-width: 768px)
+  .container
+    width: 576px
+    .footer 
+      &-title 
+        font-size: 45px 
+      &-logo_text
+        padding: 30px 0 30px
+    .header 
+      &-logo_text
+        flex-direction: column
+        align-items: center 
+      &_text 
+        text-align: center 
+        margin-bottom: 15px 
+        width: 290px 
+      &-text 
+        margin: 0 auto 10px 
+        text-align: center       
+@media (max-width: 577px) 
+  .container
+    width: 95%
+  .footer
+    padding: 10px 0 30px 
+    &-logo_text
+      flex-direction: column
+      align-items: center 
+    &_text 
+      text-align: center 
+      margin-bottom: 15px 
+      width: 290px 
+    &-text 
+      margin: 0 auto 10px 
+      text-align: center 
+             
