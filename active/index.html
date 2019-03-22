@@ -6,6 +6,7 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/slick.css">
+ <link rel="icon" type="image/x-icon" href="favicon.ico"> 
   <title>active</title>
 </head>
 <body>
@@ -87,8 +88,8 @@
             </div>
           </div> 
            <div class="main-video">
-              <iframe width="550" height="360" src="video/Dj Goja - Miles Away.webm" frameborder="0"
-                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <video width="550" height="360" controls="controls" src="video/Dj Goja - Miles Away.webm" frameborder="0"
+                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
           </div>
         </div>
       </div>
@@ -366,6 +367,38 @@
       </div>
       <div class="footer-small-text">© www.activemoney.ru 2008-2017. Все права защищены.</div>
       </div> 
+
+      <div class="modal"> 
+        <div class="container">
+          <form action="mailer/smart.php" method="POST" class="ajax"></form>
+          <div class="modal-form">
+            <div class="modal-form__title">ЗакаЗАТЬ ЗВОНОК</div>
+            <p class="form-text">Оставьте ваши контактные данные
+            и наш менеджер перезвонит вам</p>
+            <div class="form-inputs__button">
+              <input type="text" name="user_name" class="input input-name modal__input" placeholder="Ваше имя">
+              <input type="tel" name="user_phone" class="input input-phone modal__input mask" placeholder="Ваш номер телефона">
+              <button type="submit" class="button modal-form__button">Получить материалы</button>
+            </div>
+            <div class="modal-close">&#10006;</div>
+          </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="thank">
+        <div class="container">
+          <div class="thank-wrap">
+            <div class="thank-close">&#10006;</div>
+            <div class="thank-subtitle">СПАСИБО ЗА ЗАЯВКУ<span>Ваше сообщение отправлено</span></div>
+          </div>
+          
+        </div>
+      </div>
+
+      
+      
+      
     
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
